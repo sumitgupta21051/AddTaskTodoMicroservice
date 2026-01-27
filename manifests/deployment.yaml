@@ -15,8 +15,8 @@ spec:
       containers:
       - name: add-task
         env:
-          - name: CONNECTION_STRING
-            value: "Driver={ODBC Driver 18 for SQL Server};Server=tcp:sqlserver-aks.database.windows.net,1433;Database=databse-sql1;Uid=adminuser;Pwd=thisIsKat11;Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;"                                       
-        image: acrrg1.azurecr.io/addtasktodo:v1
+        - name: CONNECTION_STRING
+          value: "Driver={ODBC Driver 18 for SQL Server};Server=tcp:sqlserver-aks.database.windows.net,1433;Database=databse-sql1;Uid=adminuser;Pwd=thisIsKat11;Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;"                                       
+        image: acrrg1.azurecr.io/addtasktodo:v2
         ports:
         - containerPort: 8000
