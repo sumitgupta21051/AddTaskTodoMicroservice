@@ -20,3 +20,4 @@ spec:
         image: acrrg1.azurecr.io/addtasktodo:v4
         ports:
         - containerPort: 8000
+
